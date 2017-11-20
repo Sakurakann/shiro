@@ -71,6 +71,6 @@ public class LoginServlet extends HttpServlet {
       req.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(req, resp);
       return;
     }
-    req.getRequestDispatcher("/WEB-INF/jsp/loginSuccess.jsp").forward(req, resp);
+    req.getRequestDispatcher("/index.jsp").forward(req, resp);
   }
 }

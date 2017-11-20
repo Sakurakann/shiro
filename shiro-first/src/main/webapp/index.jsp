@@ -2,7 +2,7 @@
 <%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <html>
 <body>
-<h2>Hello World!</h2><br/>
+<h2>Hello <shiro:principal/></h2><br/>
 <shiro:guest>
     <a href="<%=request.getContextPath() %>/login">登陆</a>
 </shiro:guest>
